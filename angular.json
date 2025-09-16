@@ -57,12 +57,16 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "port": 9191
+          },
           "configurations": {
             "production": {
               "buildTarget": "exceljs-test:build:production"
             },
             "development": {
               "buildTarget": "exceljs-test:build:development"
+              
             }
           },
           "defaultConfiguration": "development"
